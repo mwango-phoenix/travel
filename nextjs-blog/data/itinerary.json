@@ -1,0 +1,48 @@
+{
+    "itinerary": {
+        "flights": [
+            {
+                "departureTime": "5:00",
+                "arrivalTime": "18:00",
+                "date": "Jul 5",
+                "destination": "HND",
+                "origin": "YYZ"
+            },
+            {
+                "departureTime": "19:30",
+                "arrivalTime": "8:00",
+                "date": "Jul 17",
+                "destination": "YYZ",
+                "origin": "HND"
+            }
+        ],
+        "accomodation": [
+            {
+                "start": "Jul 5",
+                "end": "Jul 17",
+                "checkIn": "16:00",
+                "checkOut": "12:00",
+                "name": "Shinjuku Granbell Hotel",
+                "address": "2 Chome-14-5 Kabukicho, Shinjuku City, Tokyo 160-0021, Japan",
+                
+            }
+        ],
+        "activities": [
+            {
+                "type": "Park",
+                "time": "10:00",
+                "name": "Shinjuku Gyoen National Garden",
+                "date": "Jul 6",
+                "address": "11 Naitomachi, Shinjuku City, Tokyo 160-0014, Japan"
+            },
+            {
+                "type": "District tour",
+                "time": "15:00",
+                "name": "Harajuku",
+                "date": "Jul 8",
+                "address": "Shibuya, Tokyo, Japan"
+            }
+        ]
+        
+     }
+}
