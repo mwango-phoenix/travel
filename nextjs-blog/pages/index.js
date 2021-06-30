@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Itinerary from '../components/itinerary';
 
 export default function Home() {
   return (
@@ -12,6 +13,8 @@ export default function Home() {
         <h1 className="title">
           Welcome to <a href="https://youtu.be/IO9XlQrEt2Y">That Travel Site</a>
         </h1>
+
+          <Itinerary itinerary={{}} />
 
 
       </main>
