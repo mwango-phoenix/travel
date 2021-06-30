@@ -1,7 +1,9 @@
 import Head from 'next/head'
 import Itinerary from '../components/itinerary';
+import {itinerary} from '../data/itinerary.json';
 
 export default function Home() {
+  console.log(itinerary);
   return (
     <div className="container">
       <Head>
@@ -14,7 +16,7 @@ export default function Home() {
           Welcome to <a href="https://youtu.be/IO9XlQrEt2Y">That Travel Site</a>
         </h1>
 
-          <Itinerary itinerary={{}} />
+          <Itinerary itinerary={itinerary} />
 
 
       </main>

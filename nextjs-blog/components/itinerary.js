@@ -1,15 +1,29 @@
 import Flight from "./flight";
 
-export default function Itinerary({props}) {
+export default function Itinerary({itinerary}) {
     return (
         <>
-            <Flight 
-                departTime="5:00"
-                arriveTime="18:00"
-                date="Jul 5"
-                dest="HND"
-                origin="YYZ"
-            />
+            <div className="itinerary">
+                {itinerary.flights.map(flight => (
+                    <Flight
+                        departureTime={flight.departureTime}
+                        arrivalTime={flight.arrivalTime}
+                        date={flight.date}
+                        origin={flight.origin}
+                        destination={flight.destination}
+                        />
+                ))}
+            </div>
+            <style jsx>{`
+                display: flex;
+                flex-direction: column;
+                grid-gap: 18px;
+                padding 15px 0;
+                width 50%;
+            
+            `}
+
+            </style>
         </>
     )
 }

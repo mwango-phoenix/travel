@@ -1,12 +1,12 @@
 import InformationContainer from "./InfoContainer";
 
-export default function Flight({departTime, arriveTime, date, dest, origin}) {
+export default function Flight({departureTime, arrivalTime, date, destination, origin}) {
     return (
         <>
             <InformationContainer
                 icon="✈"
-                upperDesc={`${date} ${departTime} ${origin}`}
-                lowerDesc={`${date} ${arriveTime} ${dest}`}
+                upperDesc={`${date} ${departureTime} ${origin}`}
+                lowerDesc={`${date} ${arrivalTime} ${destination}`}
             />
         </>
     )
