@@ -6,6 +6,7 @@ import AccommodationOut from "./accOut";
 export default function Itinerary({itinerary}) {
     return (
         <>
+            <h2>Flights</h2>
             <div className="itinerary">
                 {itinerary.flights.map(flight => (
                     <Flight
@@ -16,7 +17,7 @@ export default function Itinerary({itinerary}) {
                         destination={flight.destination}
                         />
                 ))}
-
+                <h2>Accomodations</h2>
                 {itinerary.accomodation.map(place => (
                     <AccommodationIn
                         start={place.start}
@@ -25,7 +26,16 @@ export default function Itinerary({itinerary}) {
                         address={place.address}
                     />
                 ))}
+                {itinerary.accomodation.map(place => (
+                    <AccommodationOut
+                        end={place.end}
+                        outTime={place.checkOut}
+                        name={place.name} 
+                        address={place.address}
+                    />
+                ))}
 
+                <h2>Activities</h2>    
                 {itinerary.activities.map(activity => (
                     <Activity
                         type={activity.type} 
@@ -37,14 +47,7 @@ export default function Itinerary({itinerary}) {
                     />
                 ))}
 
-                {itinerary.accomodation.map(place => (
-                    <AccommodationOut
-                        end={place.end}
-                        outTime={place.checkOut}
-                        name={place.name} 
-                        address={place.address}
-                    />
-                ))}
+                
             </div>
             <style jsx>{`
                 display: flex;
