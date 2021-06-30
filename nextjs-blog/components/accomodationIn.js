@@ -5,7 +5,7 @@ export default function AccommodationIn({start, inTime, name, address}) {
         <>
             <InformationContainer
                 icon="🏩"
-                upperDesc={`${start} ${inTime}`}
+                upperDesc={`Check In: ${start} ${inTime}`}
                 lowerDesc={`${name}, ${address}`}
             />
         </>

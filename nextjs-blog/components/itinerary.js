@@ -1,6 +1,7 @@
 import AccommodationIn from "./accomodationIn";
 import Flight from "./flight";
 import Activity from "./active";
+import AccommodationOut from "./accOut";
 
 export default function Itinerary({itinerary}) {
     return (
@@ -33,6 +34,15 @@ export default function Itinerary({itinerary}) {
                         name={activity.name} 
                         address={activity.address}
 
+                    />
+                ))}
+
+                {itinerary.accomodation.map(place => (
+                    <AccommodationOut
+                        end={place.end}
+                        outTime={place.checkOut}
+                        name={place.name} 
+                        address={place.address}
                     />
                 ))}
             </div>

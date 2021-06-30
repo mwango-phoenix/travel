@@ -5,7 +5,7 @@ export default function AccommodationOut({end, outTime, name, address}) {
         <>
             <InformationContainer
                 icon="🏩"
-                upperDesc={`${end} ${outTime}`}
+                upperDesc={`Check Out: ${end} ${outTime}`}
                 lowerDesc={`${name}, ${address}`}
             />
         </>

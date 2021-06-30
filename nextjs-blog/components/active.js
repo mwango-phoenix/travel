@@ -5,7 +5,7 @@ export default function Activity({type, time, date, name, address}) {
         <>
             <InformationContainer
                 icon="🎡"
-                upperDesc={`${type}, ${date} ${time}`}
+                upperDesc={`Activity: ${type}, When: ${date} ${time}`}
                 lowerDesc={`${name}, ${address}`}
             />
         </>
